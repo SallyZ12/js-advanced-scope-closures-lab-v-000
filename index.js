@@ -1,8 +1,8 @@
 function produceDrivingRange(blockRange) {
   return function(startBlock, endBlock) {
-    let trip = Math.abs(parseInt(startBlock,10) - parseInt(endBlock,10));
+    let trip = Math.abs(parseInt(startBlock) - parseInt(endBlock));
     let range = Math.abs(trip - blockRange);
-    // console.log('trip',Math.abs(parseInt(startBlock,10) - parseInt(endBlock,10)));
+    // console.log('trip',Math.abs(parseInt(startBlock) - parseInt(endBlock)));
     // console.log('range',Math.abs(trip - blockRange));
     // console.log(trip < blockRange);
     if (trip < blockRange) {
